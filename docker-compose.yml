@@ -1,0 +1,20 @@
+services:
+  scoutgpt:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: scoutgpt_app
+    env_file:
+      - .env
+    ports:
+      - "8123:8123"
+      - "2024:2024"
+    # This ensures the container stays running and automatically restarts
+    # if it crashes or if your machine reboots, until you explicitly stop it.
+    restart: unless-stopped
+    
+    # Optional: If you want hot-reloading for local development, uncomment the lines below.
+    # It mounts your local code into the container, but protects the container's .venv
+    # volumes:
+    #   - .:/app
+    #   - /app/.venv
