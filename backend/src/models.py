@@ -15,9 +15,7 @@ class AgentState(TypedDict):
     keywords: list[str]
     asins: list[str]
     top_n: int
-    # Planning
-    tool_plan: list[dict]
-    # Tool Outputs
+    # Tool Outputs (populated by ReAct agent)
     raw_search_results: dict
     raw_product_details: list[dict]   # each item now embeds review_insights
     # Processed
