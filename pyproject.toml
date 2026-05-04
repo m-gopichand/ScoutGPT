@@ -1,0 +1,18 @@
+[project]
+name = "ScoutGPT"
+version = "0.1.0"
+description = "Amazon product research & competitive analysis agent"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "python-dotenv>=1.2.2",
+    "serpapi>=1.0.2",
+    "langchain-google-genai>=2.0.0",
+    "langchain-core>=0.3.0",
+    "langgraph>=0.2.0",
+    "fastapi[standard]>=0.115.0",
+    "uvicorn[standard]>=0.30.0",
+    "pydantic>=2.0.0",
+    "sse-starlette>=2.0.0",
+    "langgraph-cli[inmem]>=0.4.24",
+]
