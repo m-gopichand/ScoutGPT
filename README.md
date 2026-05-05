@@ -24,7 +24,7 @@ Click on **"Add to allowed domains"**, then click on connect.
 
 ![Step 2 - Add to Allowed Domains](https://github.com/user-attachments/assets/c1d0ee66-840f-47a8-9169-5fc2c181fb06)
 
-
+### Step 3: Login with your langsmith account and reopen the link. 
 ## Local Setup
 
 1. **Environment Variables**:
